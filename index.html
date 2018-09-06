@@ -45,101 +45,31 @@
 
     <main class="body">
         <!-- Start Header -->
-        <section class="topbar">
-            <div class="container">
-                <ul class="pull-right social-icons">
-                    <li class="facebook">
-                        <a href="#">
-                            <i class="fa fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="twitter">
-                        <a href="#">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#" class="pull-left" id="contact-info">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <ul class="header-info-cols">
-                    <li>
-                        <span class="icon-col">
-                            <i class="fa fa-map-marker"></i>
-                        </span>
-                        <div>
-                            <div>
-                                <span>5 Place des Vosges
-                                    <br>56860 Séné</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="icon-col">
-                            <i class="fa fa-phone"></i>
-                        </span>
-                        <div>
-                            <div>
-                                <span>
-                                    <strong>Appelez-nous</strong>
-                                    <br>02 97 49 95 09</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="icon-col">
-                            <i class="fa fa-clock-o"></i>
-                        </span>
-                        <div>
-                            <div>
-                                <span>
-                                    <strong>Horaires d'ouverture</strong>
-                                    <br>Lundi et jeudi de 14h à 19h
-                                    <br>Mardi, mercredi et vendredi de 10h à 19h <br> Samedi de 12h à 19h </span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="header-wrapper">
-            <header class="site-header">
-                <div class="container">
-                    <div class="site-logo">
-                        <a href="#accueil">
-                            <img class="logo" src="images/logo3.png" alt="Logo">
-                        </a>
-                    </div>
-                    <a href="#" id="menu-toggle">Menu</a>
-                    <div class="site-header-right">
-                        <nav role="menu">
-                            <ul class="dd-menu sf-menu">
-                                <li>
-                                    <a href="#accueil">Accueil</a>
-                                </li>
-                                <li>
-                                    <a href="#nouveautes">Nouveautés</a>
-                                </li>
-                                <li>
-                                    <a href="#produits">Produits</a>
-                                </li>
-                                <li>
-                                    <a href="#actus">Actualités</a>
-                                </li>
-                                <li>
-                                    <a href="#contact">Contact</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+
+       
+            <header class="header-wrapper site-header">
+
+                    <!-- <a href="#" id="menu-toggle">Menu</a> -->
+                    <div class="burger"></div>
+                    <a href="#accueil"><img class="logo" src="images/logo3.png" alt="logo de jardin indoor"></a>
+
+                    <!-- <div class="mask3"></div> -->
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#home">Accueil</a></li>
+                            <li><a href="#nouveautes">Nouveautés</a></li>
+                            <li><a href="#produits">Produits</a></li>
+                            <li><a href="#actus">Actualités</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
             </header>
-        </section>
+      
         <!-- End Header -->
         <!-- SLIDER -->
-        <section class="hero-area" id="accueil">
-            <div class="flexslider heroflex hero-slider" data-autoplay="yes" data-pagination="no" data-arrows="yes" data-style="fade"
-                data-pause="yes">
+        <section class="hero-area" id="home">
+            <div class="flexslider heroflex hero-slider" data-autoplay="yes" data-pagination="no" data-arrows="yes"
+                data-style="fade" data-pause="yes">
                 <ul class="slides">
                     <li class="parallax" style="background-image: url(images/1.png);">
                         <div class="flex-caption text-align-center">
@@ -147,7 +77,7 @@
                                 <div class="flex-caption-table">
                                     <div class="flex-caption-cell">
                                         <div class="flex-caption-text">
-                                            <h1>
+                                            <h1 class="title1">
                                                 <span class="garden">Jardin</span>
                                                 <span class="indoor">Indoor</span>
                                                 <br>Grow-Shop / Head-Shop depuis 2011</h1>
@@ -168,7 +98,7 @@
                                                 <span class="garden">Jardin</span>
                                                 <span class="indoor">Indoor</span>
                                             </h1>
-                                            <h2>Les meilleurs produits aux meilleurs prix</h2>
+                                            <h2 class="title2">Les meilleurs produits aux meilleurs prix</h2>
                                             <a href="#contact" class="basic-link">Plus d'infos...</a>
                                         </div>
                                     </div>
@@ -187,7 +117,8 @@
                         <div class="feature-block">
                             <img src="images/vaporisateur.jpg" alt="Vaporisateur">
                             <h5>Vaporisateur Iolite V 2</h5>
-                            <p>Le I-olite Original est la V2 du fameux vaporisateur portable Iolite Classic fonctionnant au
+                            <p>Le I-olite Original est la V2 du fameux vaporisateur portable Iolite Classic
+                                fonctionnant au
                                 gaz. Le I-olite version 2, règle les problèmes d'allumage du Iolite1.</p>
                             <a href="#contact">Plus d'infos...</a>
                         </div>
@@ -196,7 +127,8 @@
                         <div class="feature-block">
                             <img src="images/testeur.jpg" alt="testeur">
                             <h5>Testeur Martini</h5>
-                            <p>Le Testeur pH martini de Milwaukee est un pH mètre waterproof avec affichage de la température.
+                            <p>Le Testeur pH martini de Milwaukee est un pH mètre waterproof avec affichage de la
+                                température.
                                 Ce pH mètre de poche est très simple à utiliser.</p>
                             <a href="#contact">Plus d'infos...</a>
                         </div>
@@ -205,7 +137,8 @@
                         <div class="feature-block">
                             <img src="images/ona.jpg" alt="ona">
                             <h5>Ona fresh linen 3.6 kg </h5>
-                            <p>ONA Gel est parmi nos produits les plus populaires. Les agents neutralisants d’odeurs ONA et
+                            <p>ONA Gel est parmi nos produits les plus populaires. Les agents neutralisants d’odeurs
+                                ONA et
                                 les éléments dispersants de ce produit sont le fruit de...</p>
                             <a href="#contact">Plus d'infos...</a>
                         </div>
@@ -214,7 +147,8 @@
                         <div class="feature-block">
                             <img src="images/transfo.jpg" alt="Transformateur">
                             <h5>Ballast / Transformateur ETI </h5>
-                            <p>Unité compacte ETI permettant l'utilisation de toute ampoule 400W et sécurisée par une protection
+                            <p>Unité compacte ETI permettant l'utilisation de toute ampoule 400W et sécurisée par une
+                                protection
                                 thermique coupant...</p>
                             <a href="#contact">Plus d'infos...</a>
                         </div>
@@ -233,11 +167,12 @@
                             <hr class="sm">
                             <div class="carousel-wrapper">
                                 <div class="row">
-                                    <ul class="owl-carousel carousel-fw" id="services-slider" data-columns="4" data-autoplay="" data-pagination="no" data-arrows="yes"
-                                        data-single-item="no" data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2"
+                                    <ul class="owl-carousel carousel-fw" id="services-slider" data-columns="3"
+                                        data-autoplay="" data-pagination="yes" data-arrows="yes" data-single-item="no"
+                                        data-items-desktop="3" data-items-desktop-small="3" data-items-tablet="2"
                                         data-items-mobile="1">
                                         <li class="item">
-                                            <div class="service-grid-item grid-item format-standard">
+                                            <div class="service-grid-item grid-item format-standard" >
                                                 <a href="#contact" class="media-box">
                                                     <img src="images/grinder-manivelle.jpg" alt="Grinder manivelle">
                                                 </a>
@@ -245,9 +180,12 @@
                                                     <h4>
                                                         <a href="#contact">Grinder avec filtres et manivelle</a>
                                                     </h4>
-                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit
-                                                        mi. Aenean imperdiet lacus sit amet elit porta, et malesuada erat
-                                                        bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet tellus
+                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur
+                                                        hendrerit
+                                                        mi. Aenean imperdiet lacus sit amet elit porta, et malesuada
+                                                        erat
+                                                        bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet
+                                                        tellus
                                                         malesuada...
                                                     </p>
                                                     <a href="#contact" class="more">Plus d'infos...</a>
@@ -263,9 +201,12 @@
                                                     <h4>
                                                         <a href="#contact">Lumatek 400 watts switchable</a>
                                                     </h4>
-                                                    <p>La puissance Lumatek, plus de lumens plus de fleurs ... Lumatek Ltd est
-                                                        fier de fournir les ballasts électroniques, et ampoules de la plus
-                                                        haute qualité pour l'horticulture d'intérieur. Des tests ont montré
+                                                    <p>La puissance Lumatek, plus de lumens plus de fleurs ... Lumatek
+                                                        Ltd est
+                                                        fier de fournir les ballasts électroniques, et ampoules de la
+                                                        plus
+                                                        haute qualité pour l'horticulture d'intérieur. Des tests ont
+                                                        montré
                                                         que les Lumatek...
                                                     </p>
                                                     <a href="#contact" class="more">Plus d'infos...</a>
@@ -281,9 +222,12 @@
                                                     <h4>
                                                         <a href="#contact">Grinder avec filtres et manivelle</a>
                                                     </h4>
-                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit
-                                                        mi. Aenean imperdiet lacus sit amet elit porta, et malesuada erat
-                                                        bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet tellus
+                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur
+                                                        hendrerit
+                                                        mi. Aenean imperdiet lacus sit amet elit porta, et malesuada
+                                                        erat
+                                                        bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet
+                                                        tellus
                                                         malesuada...
                                                     </p>
                                                     <a href="#contact" class="more">Plus d'infos...</a>
@@ -299,9 +243,12 @@
                                                     <h4>
                                                         <a href="#contact">Lumatek 400 watts switchable</a>
                                                     </h4>
-                                                    <p>La puissance Lumatek, plus de lumens plus de fleurs ... Lumatek Ltd est
-                                                        fier de fournir les ballasts électroniques, et ampoules de la plus
-                                                        haute qualité pour l'horticulture d'intérieur. Des tests ont montré
+                                                    <p>La puissance Lumatek, plus de lumens plus de fleurs ... Lumatek
+                                                        Ltd est
+                                                        fier de fournir les ballasts électroniques, et ampoules de la
+                                                        plus
+                                                        haute qualité pour l'horticulture d'intérieur. Des tests ont
+                                                        montré
                                                         que les Lumatek...
                                                     </p>
                                                     <a href="#contact" class="more">Plus d'infos...</a>
@@ -317,9 +264,12 @@
                                                     <h4>
                                                         <a href="#contact">Grinder avec filtres et manivelle</a>
                                                     </h4>
-                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit
-                                                        mi. Aenean imperdiet lacus sit amet elit porta, et malesuada erat
-                                                        bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet tellus
+                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur
+                                                        hendrerit
+                                                        mi. Aenean imperdiet lacus sit amet elit porta, et malesuada
+                                                        erat
+                                                        bibendum. Cras sed nunc massa. Quisque tempor dolor sit amet
+                                                        tellus
                                                         malesuada...
                                                     </p>
                                                     <a href="#contact" class="more">Plus d'infos...</a>
@@ -335,9 +285,12 @@
                                                     <h4>
                                                         <a href="#contact">Lumatek 400 watts switchable</a>
                                                     </h4>
-                                                    <p>La puissance Lumatek, plus de lumens plus de fleurs ... Lumatek Ltd est
-                                                        fier de fournir les ballasts électroniques, et ampoules de la plus
-                                                        haute qualité pour l'horticulture d'intérieur. Des tests ont montré
+                                                    <p>La puissance Lumatek, plus de lumens plus de fleurs ... Lumatek
+                                                        Ltd est
+                                                        fier de fournir les ballasts électroniques, et ampoules de la
+                                                        plus
+                                                        haute qualité pour l'horticulture d'intérieur. Des tests ont
+                                                        montré
                                                         que les Lumatek...
                                                     </p>
                                                     <a href="#contact" class="more">Plus d'infos...</a>
@@ -356,31 +309,37 @@
                             <div class="accordion" id="accordionArea">
                                 <div class="accordion-group panel">
                                     <div class="accordion-heading accordionize">
-                                        <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordionArea" href="#oneArea">100% Indépendant
+                                        <a class="accordion-toggle active" data-toggle="collapse" data-parent="#accordionArea"
+                                            href="#oneArea">100% Indépendant
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                     </div>
                                     <div id="oneArea" class="accordion-body in collapse">
-                                        <div class="accordion-inner">Just add data-toggle="collapse" and a data-target to the element to automatically
-                                            assign control of a collapsible element. The data-target attribute accepts a
-                                            CSS selector to apply the collapse to. Be sure to add the class collapse to the
-                                            collapsible element. If you'd like it to default open, add the additional class
-                                            in.
+                                        <div class="accordion-inner">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Cupiditate vero maiores assumenda magni repellendus
+                                            voluptate aspernatur doloremque in sed, iste dolor error commodi.
+                                            Consectetur, delectus quis libero pariatur eveniet cupiditate.Eos,
+                                            perspiciatis! Illo, culpa ut consectetur pariatur sunt in porro. Tempora,
+                                            sint velit ab laborum eius quam magni, voluptates aliquid repellat
+                                            cupiditate deleniti dolore nam consequatur incidunt hic vel quos.
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-group panel">
                                     <div class="accordion-heading accordionize">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#twoArea">Produits de qualité
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea"
+                                            href="#twoArea">Produits de qualité
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                     </div>
                                     <div id="twoArea" class="accordion-body collapse">
-                                        <div class="accordion-inner">Just add data-toggle="collapse" and a data-target to the element to automatically
-                                            assign control of a collapsible element. The data-target attribute accepts a
-                                            CSS selector to apply the collapse to. Be sure to add the class collapse to the
-                                            collapsible element. If you'd like it to default open, add the additional class
-                                            in.
+                                        <div class="accordion-inner">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Cupiditate vero maiores assumenda magni repellendus
+                                            voluptate aspernatur doloremque in sed, iste dolor error commodi.
+                                            Consectetur, delectus quis libero pariatur eveniet cupiditate.Eos,
+                                            perspiciatis! Illo, culpa ut consectetur pariatur sunt in porro. Tempora,
+                                            sint velit ab laborum eius quam magni, voluptates aliquid repellat
+                                            cupiditate deleniti dolore nam consequatur incidunt hic vel quos.
                                         </div>
                                     </div>
                                 </div>
@@ -391,26 +350,25 @@
                                         </a>
                                     </div>
                                     <div id="threeArea" class="accordion-body collapse">
-                                        <div class="accordion-inner">Just add data-toggle="collapse" and a data-target to the element to automatically
-                                            assign control of a collapsible element. The data-target attribute accepts a
-                                            CSS selector to apply the collapse to. Be sure to add the class collapse to the
-                                            collapsible element. If you'd like it to default open, add the additional class
-                                            in.
+                                        <div class="accordion-inner">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate vero maiores assumenda magni repellendus voluptate aspernatur doloremque in sed, iste dolor error commodi. Consectetur, delectus quis libero pariatur eveniet cupiditate.Eos, perspiciatis! Illo, culpa ut consectetur pariatur sunt in porro. Tempora, sint velit ab laborum eius quam magni, voluptates aliquid repellat cupiditate deleniti dolore nam consequatur incidunt hic vel quos.
                                         </div>
                                     </div>
                                 </div> -->
                                 <div class="accordion-group panel">
                                     <div class="accordion-heading accordionize">
-                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea" href="#fourArea">Prix ajustés
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionArea"
+                                            href="#fourArea">Prix ajustés
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                     </div>
                                     <div id="fourArea" class="accordion-body collapse">
-                                        <div class="accordion-inner">Just add data-toggle="collapse" and a data-target to the element to automatically
-                                            assign control of a collapsible element. The data-target attribute accepts a
-                                            CSS selector to apply the collapse to. Be sure to add the class collapse to the
-                                            collapsible element. If you'd like it to default open, add the additional class
-                                            in.
+                                        <div class="accordion-inner">Lorem ipsum dolor, sit amet consectetur
+                                            adipisicing elit. Cupiditate vero maiores assumenda magni repellendus
+                                            voluptate aspernatur doloremque in sed, iste dolor error commodi.
+                                            Consectetur, delectus quis libero pariatur eveniet cupiditate.Eos,
+                                            perspiciatis! Illo, culpa ut consectetur pariatur sunt in porro. Tempora,
+                                            sint velit ab laborum eius quam magni, voluptates aliquid repellat
+                                            cupiditate deleniti dolore nam consequatur incidunt hic vel quos.
                                         </div>
                                     </div>
                                 </div>
@@ -425,8 +383,9 @@
                         <div class="spacer-30"></div>
                         <div class="carousel-wrapper">
                             <div class="row">
-                                <ul class="owl-carousel carousel-fw" id="projects-slider" data-columns="4" data-autoplay="" data-pagination="no" data-arrows="yes"
-                                    data-single-item="no" data-items-desktop="4" data-items-desktop-small="3" data-items-tablet="2"
+                                <ul class="owl-carousel carousel-fw" id="projects-slider" data-columns="4"
+                                    data-autoplay="" data-pagination="no" data-arrows="yes" data-single-item="no"
+                                    data-items-desktop="4" data-items-desktop-small="3" data-items-tablet="2"
                                     data-items-mobile="1">
                                     <li class="item">
                                         <div class="project-grid-item format-image">
@@ -492,9 +451,9 @@
                         </div>
                         <div class="carousel-wrapper">
                             <div class="row">
-                                <ul class="owl-carousel carousel-fw" id="blog-slider" data-columns="2" data-autoplay="" data-pagination="no" data-arrows="yes"
-                                    data-single-item="no" data-items-desktop="2" data-items-desktop-small="2" data-items-tablet="1"
-                                    data-items-mobile="1">
+                                <ul class="owl-carousel carousel-fw" id="blog-slider" data-columns="2" data-autoplay=""
+                                    data-pagination="no" data-arrows="yes" data-single-item="no" data-items-desktop="2"
+                                    data-items-desktop-small="2" data-items-tablet="1" data-items-mobile="1">
                                     <li class="item">
                                         <div class="blog-list-item format-standard">
                                             <div class="row">
@@ -506,21 +465,13 @@
                                                             <span class="month">Août</span>
                                                         </span>
                                                     </a>
-                                                    <!-- <div class="blog-item-info">
-                                                        <a href="#" class="meta-data">
-                                                            <i class="fa fa-comments"></i> 10 Comments</a>
-                                                        <div class="meta-data">
-                                                            <i class="fa fa-tags"></i>
-                                                            <a href="#">Benefits</a>,
-                                                            <a href="#">How to</a>
-                                                        </div>
-                                                    </div> -->
                                                 </div>
                                                 <div class="col-md-7 col-sm-7">
                                                     <h4>
                                                         <a href="#">Le nouveau logo de Jardin Indoor est arrivé !</a>
                                                     </h4>
-                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit
+                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur
+                                                        hendrerit
                                                         mi. Aenean imperdiet lacus sit amet elit porta...</p>
                                                     <a href="#" class="basic-link">Plus d'infos...</a>
                                                 </div>
@@ -538,59 +489,19 @@
                                                             <span class="month">Apr</span>
                                                         </span>
                                                     </a>
-                                                    <!-- <div class="blog-item-info">
-                                                        <a href="#" class="meta-data">
-                                                            <i class="fa fa-comments"></i> 10 Comments</a>
-                                                        <div class="meta-data">
-                                                            <i class="fa fa-tags"></i>
-                                                            <a href="#">Tips</a>,
-                                                            <a href="#">Tricks</a>
-                                                        </div>
-                                                    </div> -->
                                                 </div>
                                                 <div class="col-md-7 col-sm-7">
                                                     <h4>
                                                         <a href="#">Refonte du site web Jardin Indoor !</a>
                                                     </h4>
-                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit
+                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur
+                                                        hendrerit
                                                         mi. Aenean imperdiet lacus sit amet elit porta...</p>
                                                     <a href="#" class="basic-link">Plus d'infos...</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <!-- <li class="item">
-                                        <div class="blog-list-item format-standard">
-                                            <div class="row">
-                                                <div class="col-md-5 col-sm-5">
-                                                    <a href="#" class="media-box">
-                                                        <img src="http://placehold.it/800x533&amp;text=IMAGE+PLACEHOLDER" alt="">
-                                                        <span class="date">
-                                                            <span class="day">21</span>
-                                                            <span class="month">Mar</span>
-                                                        </span>
-                                                    </a>
-                                                    <div class="blog-item-info">
-                                                        <a href="#" class="meta-data">
-                                                            <i class="fa fa-comments"></i> 10 Comments</a>
-                                                        <div class="meta-data">
-                                                            <i class="fa fa-tags"></i>
-                                                            <a href="#">Tips</a>,
-                                                            <a href="#">Tricks</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-7 col-sm-7">
-                                                    <h4>
-                                                        <a href="#">How to make your lawn &amp; landscape look it's best?</a>
-                                                    </h4>
-                                                    <p>Vestibulum quam nisi, pretium a nibh sit amet, consectetur hendrerit
-                                                        mi. Aenean imperdiet lacus sit amet elit porta...</p>
-                                                    <a href="#" class="basic-link">Plus d'infos...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li> -->
                                 </ul>
                             </div>
                         </div>
@@ -598,85 +509,150 @@
                 </div>
                 <div class="parallax parallax1 parallax-light padding-tb75" style="background-image:url(images/3.png);">
                     <div class="text-align-center">
-                        <h2>Des conseils adaptés à vos cultures Indoor ou Outdoor <br> Des devis sur mesure et personnalisés .
-                                
-                                 </h2>
+                        <h2>Des conseils adaptés à vos cultures Indoor ou Outdoor <br> Des devis sur mesure et
+                            personnalisés .
+
+                        </h2>
                         <a href="#contact" class="btn btn-default btn-ghost btn-light">Contactez-nous</a>
                     </div>
                 </div>
-                <div class="padding-tb75">
-                    <article class="section">
-                        <div id="cd-google-map">
-                            <div id="google-container"></div>
-                            <div id="cd-zoom-in"></div>
-                            <div id="cd-zoom-out"></div>
-                        </div>
-                    </article>
+                <div id="map">
+                </div>
+                </article>
+            </div>
+
+            <!-- Site Footer -->
+            <div class="site-footer" id="contact">
+
+                <div class="widget footer_widget about">
+                    <h4 class="widgettitle">
+                        <i class="fa fa-info-circle"></i> Qui sommes-nous</h4>
+                    
+                        <img class="logo-contact" src="images/logo3.png" alt="logo">
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas
+                        rhoncus.
+                        Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
                 </div>
 
-                <!-- Site Footer -->
-                <div class="site-footer">
-                    <div class="container" id="contact">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="widget footer_widget">
-                                    <h4 class="widgettitle">
-                                        <i class="fa fa-info-circle"></i>Qui sommes nous</h4>
-                                    <p>
-                                        <img class="logo" src="images/logo3.png" alt="logo">
-                                    </p>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.
-                                        Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="widget footer_widget">
-                                    <h4 class="widgettitle">
-                                        <i class="fa fa-envelope"></i> Contactez-nous</h4>
-                                    <form method="post" id="quoteform" name="quoteform" class="quick-quote clearfix" action="mail/quote.php">
-                                        <input name="quote-name" id="quote-name" type="text" placeholder="Votre Nom" class="form-control">
-                                        <input name="quote-email" id="quote-email" type="email" placeholder="Votre Email" class="form-control">
-                                        <input name="quote-message" id="quote-message" type="text" placeholder="Votre message" class="form-control">
-                                        <input id="quote-submit" name="quote-submit" type="submit" value="Envoyer" class="btn btn-primary btn-block">
-                                        <div id="Quote-message" class="accent-color"></div>
-                                    </form>
 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="widget footer_widget contact">
+                    <h4 class="widgettitle">
+                        <i class="fa fa-envelope"></i> Contactez-nous</h4>
+                                <form name="ajax-form" id="ajax-form" action="mail/mail-it.php" method="post"  class="quick-quote clearfix">
+                                    
+                                        <label for="name">
+                                            <span class="error" id="err-name">Ce champ est requis !</span>
+                                        </label>
+                                        <input  class="form-control" name="name" id="name" type="text"  placeholder="Votre nom: *" />
+                                    
+                                   
+                                        <label for="email">
+                                            <span class="error" id="err-email">Ce champ est requis !</span>
+                                            <span class="error" id="err-emailvld">L'e-mail n'est pas au bon format !</span>
+                                        </label>
+                                        <input  class="form-control" name="email" id="email" type="text" placeholder="Votre e-mail: *" />
+                                   
+                                   
+                                        <label for="message">
+                                            <span class="error" id="err-msg">Ce champ est requis !</span>
+                                        </label>
+                                        <textarea  class="form-control" name="message" id="message" placeholder="Votre message..."></textarea>
+                                   
+                                        <div id="button-con">
+                                            <button class="btn btn-primary btn-block" id="send"
+                                                data-lang="fr" name='submit'>Envoyer</button>
+                                        </div>
+                
+                
+                                    </article>
+                                    <div class="error text-align-center" id="err-form">Veuillez remplir le formulaire !</div>
+                                    <div class="error text-align-center" id="err-timedout">La connexion au serveur a expirée</div>
+                                    <div class="error" id="err-state"></div>
+                                </form>
+                
+                                <div class="clear"></div>
+                                <div id="ajaxsuccess">Votre message a bien été envoyé !</div>
+                                <div class="clear"></div>
+                            
                 </div>
-                <!-- Site Footer -->
-                <footer class="site-footer-bottom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 col-sm-6">
-                                <div class="copyrights-col-left">
-                                    <p>&copy; 2018 Jardin-Indoor. Tous droits réservés</p>
+               
+                <div class="widget footer_widget call">
+                    <ul class="header-info-cols infos">
+                        <li>
+                            <span class="icon-col">
+                                <i class="fa fa-map-marker"></i>
+                            </span>
+                            <div>
+                                <div>
+                                    <span>5 Place des Vosges
+                                        <br>56860 Séné</span>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-sm-6">
-                                <div class="copyrights-col-right">
-                                    <ul class="social-icons-rounded social-icons-colored pull-right">
-                                        <li class="facebook">
-                                            <a href="#">
-                                                <i class="fa fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li class="twitter">
-                                            <a href="#">
-                                                <i class="fa fa-twitter"></i>
-                                            </a>
-                                        </li>
-                                    </ul>
+                        </li>
+                        <li>
+                            <span class="icon-col">
+                                <i class="fa fa-phone"></i>
+                            </span>
+                            <div>
+                                <div>
+                                    <span>
+                                        <strong>Appelez-nous</strong>
+                                        <br>02 97 49 95 09</span>
                                 </div>
                             </div>
-                        </div>
+                        </li>
+                        <li>
+                            <span class="icon-col">
+                                <i class="fa fa-clock-o"></i>
+                            </span>
+                            <div>
+                                <div>
+                                    <span>
+                                        <strong>Horaires</strong>
+                                        <br>Lundi et jeudi de 14h à 19h
+                                        <br>Mardi, mercredi et vendredi de 10h à 19h <br> Samedi de 12h à
+                                        19h
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget footer_widget follow">
+
+                        <h4 class="widgettitle">
+                            <i class="fa fa-info-circle"></i> Suivez-nous</h4>
+                        <ul class="social-icons-rounded social-icons-colored pull-left">
+                            <li class="facebook">
+                                <a href="#">
+                                    <i class="fa fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="twitter">
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </footer>
-                <a id="back-to-top">
-                    <i class="fa fa-angle-double-up"></i>
-                </a>
+
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <!-- Site Footer -->
+        <footer class="site-footer-bottom">
+            
+                        <div class="copyrights-col-left copy">
+                            <p>&copy; 2018 <a style="color:#219bcd;" href="www.warp-code.fr">Warp Code</a>. Tous
+                                droits réservés. <a href="#" class="mentions-legales">Mentions légales</a></p>
+                        </div>
+        </footer>
+        <a id="back-to-top">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
     </main>
     <script src="js/jquery-2.2.3.min.js"></script>
     <!-- Jquery Library Call -->
@@ -694,8 +670,11 @@
     <!-- All Scripts -->
     <script src="vendor/flexslider/js/jquery.flexslider.js"></script>
     <!-- Map Google -->
-    <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9DliI4M9waCos3TzDYiXIp138WrkBLT8"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <!-- Scripts divers -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
