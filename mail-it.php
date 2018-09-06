@@ -1,9 +1,8 @@
 <?php
-
 /* Gestion du formulaire de contact */
 
 $send_to = "rossi56@hotmail.fr";
-$send_subject = "Message contact www.warp-code.fr";
+$send_subject = "Message de contact Jardin Indoor";
 
 
 

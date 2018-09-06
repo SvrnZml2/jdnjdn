@@ -44,7 +44,7 @@ jQuery(document).ready(function ($) { // wait until the document is ready
 				}
 				else {
 					$('#err-state').slideDown('slow');
-					$("#err-state").html('An error occurred: ' + error + '');
+					$("#err-state").html('Une erreur est survenue: ' + error + '');
 				}
 			},
 			success: function() {

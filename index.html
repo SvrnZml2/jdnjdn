@@ -16,6 +16,7 @@
     <link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fancybox-dist.css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -399,9 +400,10 @@
                                     </li>
                                     <li class="item">
                                         <div class="project-grid-item format-image">
-                                            <a href="#" class="media-box">
+                                                <a class="media-box" id="single_image" href="images/testeur.jpg"><img src="images/testeur-small.jpg" alt=""/></a>
+                                            <!-- <a href="#" class="media-box">
                                                 <img src="images/testeur.jpg" alt="">
-                                            </a>
+                                            </a> -->
                                             <h4>
                                                 <a href="#">Testeur Martini</a>
                                             </h4>
@@ -539,7 +541,7 @@
                 <div class="widget footer_widget contact">
                     <h4 class="widgettitle">
                         <i class="fa fa-envelope"></i> Contactez-nous</h4>
-                                <form name="ajax-form" id="ajax-form" action="mail/mail-it.php" method="post"  class="quick-quote clearfix">
+                                <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post"  class="quick-quote clearfix">
                                     
                                         <label for="name">
                                             <span class="error" id="err-name">Ce champ est requis !</span>
@@ -675,6 +677,8 @@
     <!-- Scripts divers -->
     <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack-dist.js"></script>
+    
 </body>
 
 </html>
