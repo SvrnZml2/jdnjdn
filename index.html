@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!--==================================================  CSS  ================================================== -->
+    <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -390,9 +391,8 @@
                                     data-items-mobile="1">
                                     <li class="item">
                                         <div class="project-grid-item format-image">
-                                            <a href="#" class="media-box">
-                                                <img src="images/transfo.jpg" alt="">
-                                            </a>
+                                                <a class="media-box" href="images/transfo.jpg" data-lightbox="Ballast / Transformateur ETI" data-title="Ballast / Transformateur ETI"> <img src="images/transfo-small.jpg" alt="Ballast / Transformateur ETI"> </a> 
+
                                             <h4>
                                                 <a href="#">Ballast / Transformateur ETI </a>
                                             </h4>
@@ -400,20 +400,15 @@
                                     </li>
                                     <li class="item">
                                         <div class="project-grid-item format-image">
-                                                <a class="media-box" id="single_image" href="images/testeur.jpg"><img src="images/testeur-small.jpg" alt=""/></a>
-                                            <!-- <a href="#" class="media-box">
-                                                <img src="images/testeur.jpg" alt="">
-                                            </a> -->
-                                            <h4>
-                                                <a href="#">Testeur Martini</a>
+                                            <a class="media-box" href="images/testeur.jpg" data-lightbox="testeur" data-title="Testeur Martini"> <img src="images/testeur-small.jpg" alt="Testeur Martini"> </a> 
+                                            <h4><a href="">Testeur Martini</a>
                                             </h4>
                                         </div>
                                     </li>
                                     <li class="item">
                                         <div class="project-grid-item format-image">
-                                            <a href="#" class="media-box">
-                                                <img src="images/transformateur.jpg" alt="">
-                                            </a>
+                                                <a class="media-box" href="images/transformateur.jpg" data-lightbox="Lumatek 400 watts switchable" data-title="Lumatek 400 watts switchable"> <img src="images/transformateur-small.jpg" alt="Lumatek 400 watts switchable"> </a> 
+
                                             <h4>
                                                 <a href="#">Lumatek 400 watts switchable</a>
                                             </h4>
@@ -421,9 +416,8 @@
                                     </li>
                                     <li class="item">
                                         <div class="project-grid-item format-image">
-                                            <a href="#" class="media-box">
-                                                <img src="images/grinder-manivelle.jpg" alt="">
-                                            </a>
+                                                <a class="media-box" href="images/grinder-manivelle.jpg" data-lightbox="Grinder Manivelle" data-title="Grinder Manivelle"> <img src="images/grinder-manivelle-small.jpg" alt="Grinder Manivelle"> </a> 
+
                                             <h4>
                                                 <a href="#">Grinder Manivelle</a>
                                             </h4>
@@ -431,9 +425,8 @@
                                     </li>
                                     <li class="item">
                                         <div class="project-grid-item format-image">
-                                            <a href="#" class="media-box">
-                                                <img src="http://placehold.it/600x400&amp;text=IMAGE+PLACEHOLDER" alt="">
-                                            </a>
+                                                <a class="media-box" href="images/vaporisateur.jpg" data-lightbox="Cottage with Picket Fence" data-title="Cottage with Picket Fence"> <img src="images/vaporisateur-small.jpg" alt="Cottage with Picket Fence"> </a> 
+
                                             <h4>
                                                 <a href="#">Cottage with Picket Fence</a>
                                             </h4>
@@ -518,11 +511,12 @@
                         <a href="#contact" class="btn btn-default btn-ghost btn-light">Contactez-nous</a>
                     </div>
                 </div>
-                <div id="map">
-                </div>
+               
                 </article>
             </div>
-
+            <!--Map-->
+            <div id="map">
+                </div>
             <!-- Site Footer -->
             <div class="site-footer" id="contact">
 
@@ -587,8 +581,8 @@
                             </span>
                             <div>
                                 <div>
-                                    <span>5 Place des Vosges
-                                        <br>56860 Séné</span>
+                                    <span>36, avenue Gontran Bienvenu
+                                        <br>56000 Vannes</span>
                                 </div>
                             </div>
                         </li>
@@ -672,12 +666,14 @@
     <!-- All Scripts -->
     <script src="vendor/flexslider/js/jquery.flexslider.js"></script>
     <!-- Map Google -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9DliI4M9waCos3TzDYiXIp138WrkBLT8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp9-xyLswGg78nw7blTPXbD11Dnqe46fQ&callback=initMap" async
+    defer></script>
     <script type="text/javascript" src="js/map.js"></script>
     <!-- Scripts divers -->
     <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
     <script type="text/javascript" src="js/jquery.fancybox.pack-dist.js"></script>
+    <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
     
 </body>
 
