@@ -17,10 +17,9 @@ $(document).ready(function () {
       $('.burger').removeClass('open');
 
     });
-     /*==================================FAncy box================*/
+  });
+
+  /*==================================FAncy box================*/
   $('#lightgallery').lightGallery({
     pager: true
   });
-  });
-
- 
