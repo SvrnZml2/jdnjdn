@@ -482,7 +482,8 @@ a:focus, .btn:focus,
 	clear:both;
 }
 .accordion{
-	border: 1px solid #E6E6E6;
+  border: 1px solid #E6E6E6;
+  text-align: justify;
 }
 
 /* ==================================================
