@@ -8,6 +8,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
 <head>
     <!--***************************METAS**************************************-->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="google-site-verification" content="Xru99fz932aOq1RiiBecOcx0PgVDhfwOKL1FRh6qA-0" />
     <title>Jardin Indoor jardinerie indépendante spécialisé dans la culture indoor et la culture outdoor –Grow shop
         street shop Bretagne Morbihan vannes 56, graine potagère ancienne biobizz plagron shisha clipper feuille slim
         ocb pas cher</title>
@@ -99,7 +100,6 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                     <li><a href="#home">Accueil</a></li>
                     <li><a href="#nouveautes">Nouveautés</a></li>
                     <li><a href="#produits">Produits</a></li>
-                    <li><a href="#actus">Actualités</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -155,14 +155,14 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="feature-block">
-                            <img src="images/Logo_Smart.jpg" alt="Smart pot">
+                            <img src="images/Logo_Smart.png" alt="Smart pot">
                             <h5>Smart Pot</h5>
                             <a href="#contact">Plus d'infos...</a>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="feature-block">
-                            <img src="images/bio.jpg" alt="Bio Technology">
+                            <img src="images/bio.png" alt="Bio Technology">
                             <h5>Bio Technology</h5>
                             <a href="#contact">Plus d'infos...</a>
                         </div>
@@ -254,8 +254,8 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                                         </li>
                                         <li class="item">
                                             <div class="service-grid-item grid-item format-standard">
-                                                <a class="media-box" href="images/pot.jpg" data-lightbox="Smart Pot original"
-                                                    data-title="Smart Pot original"> <img src="images/pot.jpg" alt="Smart Pot original">
+                                                <a class="media-box" href="images/pot.png" data-lightbox="Smart Pot original"
+                                                    data-title="Smart Pot original"> <img src="images/pot.png" alt="Smart Pot original">
                                                     <div class="grid-item-inner">
                                                         <h4>
                                                             <a href="#contact">Smart Pot Orginal</a>
@@ -279,8 +279,8 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                                         </li>
                                         <li class="item">
                                             <div class="service-grid-item grid-item format-standard">
-                                                <a class="media-box" href="images/pot3.jpg" data-lightbox="Smart Pot 10l"
-                                                    data-title="Secret Jardin Lodge"> <img src="images/pot3.jpg" alt="Smart Pot 10l">
+                                                <a class="media-box" href="images/pot3.png" data-lightbox="Smart Pot 10l"
+                                                    data-title="Secret Jardin Lodge"> <img src="images/pot3.png" alt="Smart Pot 10l">
                                                     <div class="Smart Pot 10l">
                                                         <h4>
                                                             <a href="#contact">Smart Pot 10l</a>
@@ -451,9 +451,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
 
                     <img class="logo-contact" src="images/logo3.png" alt="logo">
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas
-                        rhoncus.
-                        Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
+                    <p>Jardin indoor c’est avant tout un Grow-Shop / Head-Shop 100% Indépendant depuis 2011 qui est situé à Vannes.</p>
                 </div>
 
 
@@ -566,15 +564,11 @@ if(!empty($_POST))
                         <i class="fa fa-info-circle"></i> Suivez-nous</h4>
                     <ul class="social-icons-rounded social-icons-colored pull-left">
                         <li class="facebook">
-                            <a href="#">
+                            <a href="https://www.facebook.com/Jardin-Indoor-Grow-Shop-Head-Shop-%C3%A0-Vannes-Morbihan-56-136629599739173/">
                                 <i class="fa fa-facebook-f"></i>
                             </a>
                         </li>
-                        <li class="twitter">
-                            <a href="#">
-                                <i class="fa fa-twitter"></i>
-                            </a>
-                        </li>
+                        
                     </ul>
                 </div>
 
@@ -587,7 +581,7 @@ if(!empty($_POST))
         <footer class="site-footer-bottom">
 
             <div class="copyrights-col-left copy">
-                <p>&copy; 2018 <a style="color:#219bcd;" href="www.warp-code.fr">Warp Code</a>. Tous
+                <p>&copy; 2018 <a style="color:#219bcd;" href="https://www.warp-code.fr">Warp Code</a>. Tous
                     droits réservés. <a href="#" class="mentions-legales">Mentions légales</a></p>
             </div>
         </footer>
