@@ -11,8 +11,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <title>Jardin Indoor jardinerie indépendante spécialisé dans la culture indoor et la culture outdoor –Grow shop
         street shop Bretagne Morbihan vannes 56, graine potagère ancienne biobizz plagron shisha clipper feuille slim
         ocb pas cher</title>
-    <meta name="description" lang="fr" content="Jardin Indoor est un Grow Shop street shop jardinerie indépendante situer à vannes dans le Morbihan 56 Bretagne .Vous pouvez y retrouvez des feuilles slim clipper chicha à pas cher etc … mais également tout pour la culture indoor et outdoor matériels de culture hor sol terreaux biobizz plagron house et garden canna ainsi que de nombreuses chambre de culture eclairage hoticole hps mh cfl à pas cher
-    graines potagere tomates radis mais melon basilic piment etc ... a pas cher CBD">
+    <meta name="description" lang="fr" content="Jardin Indoor est un Grow Shop street shop jardinerie indépendante situé à vannes dans le Morbihan 56 Bretagne. Vous pouvez y retrouver des feuilles slim clipper chicha à pas cher etc … mais également tout pour la culture indoor et outdoor matériels de culture hors sol terreaux biobizz plagron house et garden canna ainsi que de nombreuses chambres de culture éclairage horticole hps mh cfl à pas cher graines potagère tomates radis mais melon basilic piment etc. A pas cher CBD">
     <meta name="keywords" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -22,21 +21,21 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <meta name="copyright" content="Warp-Code">
     <meta name="distribution" content="global">
     <meta name="publisher" content="WarpCode56">
-    <meta name="abstract" content="Ce site presente l'activite de la jardinerie, les produits qu'elle vend">
+    <meta name="abstract" content="Ce site présente l'activité de la jardinerie, les produits qu'elle vend">
     <!--**********************FACEBOOK****************************************-->
     <meta property="og:title" content="Jardin-indoor, Jardinerie Urbaine" />
     <meta property="og:url" content="www.jardin-indoor.com" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="jardin-indoor.com" />
-    <meta property="og:description" content="Jardin Indoor est un Grow Shop street shop jardinerie indépendante situer à vannes dans le Morbihan 56 Bretagne .Vous pouvez y retrouvez des feuilles slim clipper chicha à pas cher etc … mais également tout pour la culture indoor et outdoor matériels de culture hor sol terreaux biobizz plagron house et garden canna ainsi que de nombreuses chambre de culture eclairage hoticole hps mh cfl à pas cher 
-    graines potagere tomates radis mais melon basilic pimentetc ... a pas cher CBD" />
+    <meta property="og:description" content="Jardin Indoor est un Grow Shop street shop jardinerie indépendante situé à vannes dans le Morbihan 56 Bretagne. Vous pouvez y retrouver des feuilles slim clipper chicha à pas cher etc … mais également tout pour la culture indoor et outdoor matériels de culture hors sol terreaux biobizz plagron house et garden canna ainsi que de nombreuses chambre de culture eclairage horticole hps mh cfl à pas cher 
+    graines potagère tomates radis mais melon basilic piment etc. A pas cher CBD" />
     <meta property="og:image" content="" />
     <!--**********************TWITTER****************************************-->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Jardin Indoor, Jardinerie Urbaine" />
     <meta name="twitter:url" content="www.jardin-indoor.fr" />
-    <meta name="twitter:description" content="Jardin Indoor est un Grow Shop street shop jardinerie indépendante situer à vannes dans le Morbihan 56 Bretagne .Vous pouvez y retrouvez des feuilles slim clipper chicha à pas cher etc … mais également tout pour la culture indoor et outdoor matériels de culture hor sol terreaux biobizz plagron house et garden canna ainsi que de nombreuses chambre de culture eclairage hoticole hps mh cfl à pas cher 
-    graines potagere tomates radis mais melon basilic pimentetc ... a pas cher CBD" />
+    <meta name="twitter:description" content="Jardin Indoor est un Grow Shop street shop jardinerie indépendante situé à vannes dans le Morbihan 56 Bretagne. Vous pouvez y retrouver des feuilles slim clipper chicha à pas cher etc … mais également tout pour la culture indoor et outdoor matériels de culture hors sol terreaux biobizz plagron house et garden canna ainsi que de nombreuses chambre de culture eclairage horticole hps mh cfl à pas cher 
+    graines potagère tomates radis mais melon basilic piment etc. A pas cher CBD" />
     <meta name="twitter:image" content="" />
     <meta name="twitter:image:width" content="600">
     <meta name="twitter:image:height" content="600">
@@ -78,8 +77,8 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <script src="js/modernizr.js"></script>
     <!-- Modernizr -->
     <!--==================================================  Captcha  ================================================== -->
-<?= $captcha->script(); ?>
-   
+    <?= $captcha->script(); ?>
+
 </head>
 
 <body class="home header-style3">
@@ -501,16 +500,16 @@ if(!empty($_POST))
     if($captcha->isValid($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']) === false)
     {
         ?>
-        <div class="error">
-            Le captcha ne semble pas valide
-        </div>    
-        <?php
+                    <div class="error">
+                        Le captcha ne semble pas valide
+                    </div>
+                    <?php
     }
     else
     {
         ?>
-        <div id="ajaxsuccess">Votre message a bien été envoyé !</div>
-        <?php
+                    <div id="ajaxsuccess">Votre message a bien été envoyé !</div>
+                    <?php
     }   
 }
 
