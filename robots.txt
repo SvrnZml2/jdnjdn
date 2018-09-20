@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /css/
+Allow: /images/
+Allow: /js/
+Allow: /videos/
+Disallow: /bower_components/
+Disallow: /css/font/
+Disallow: /mentions-legales.html
+Disallow: /mail-it.php
+Disallow: /recaptcha.php
+Disallow: /images/assets/
+Disallow: /images/favicon/
+Disallow: /vendor/
+Noindex: /mentions-legales.html
+Noindex: /mail-it.php
+Noindex: /recaptcha.php
+Sitemap: https://www.jardin-indoor.fr/sitemap_index.xml
