@@ -52,7 +52,6 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/jquery.fancybox-dist.css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <!-- Color Style -->
     <link href="css/color.css" rel="stylesheet" type="text/css">
@@ -111,7 +110,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
             <div class="flexslider heroflex hero-slider" data-autoplay="yes" data-pagination="no" data-arrows="yes"
                 data-style="fade" data-pause="yes">
                 <ul class="slides">
-                    <li class="parallax" style="background-image: url(images/1.png);">
+                    <li class="parallax" id="paraUno">
                         <div class="flex-caption text-align-center">
                             <div class="container">
                                 <div class="flex-caption-table">
@@ -128,7 +127,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                             </div>
                         </div>
                     </li>
-                    <li class="parallax" style="background-image: url(images/2.png);opacity: 0.7;">
+                    <li class="parallax" id="paraDos">
                         <div class="flex-caption text-align-center">
                             <div class="container">
                                 <div class="flex-caption-table">
@@ -149,7 +148,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                 </ul>
             </div>
         </section>
-        <section class="lgray-bg" style="background-image:url(images/leaves3.png); background-repeat:repeat">
+        <section class="lgray-bg" id="paraTres">
             <div class="container" id="nouveautes">
                 <h4 class="stacked-title">Nos références</h4>
                 <div class="row">

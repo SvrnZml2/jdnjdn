@@ -4374,3 +4374,12 @@ only screen and (min-resolution: 2dppx) {}
 .grid-item-inner p{
 	text-align: justify;
 }
+#paraUno{
+	background-image: url("../images/1.png");
+}
+#paraDos{
+	background-image: url("../images/2.png");opacity: 0.7;
+}
+#paraTres{
+	background-image:url("../images/leaves3.png"); background-repeat:repeat
+}
