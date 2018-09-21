@@ -1,51 +1,49 @@
 <?php
-/* Gestion du formulaire de contact */
 
-$send_to = "rossi56@hotmail.fr";
-$send_subject = "Message de contact Jardin Indoor";
+if($_SERVER["REQUEST_METHOD"] == "POST")
+{
+    $name = trim($_POST['username']);
+    $email = filter_var(trim($_POST['email']), FILTER_SANITIZE_EMAIL);
+    $message = trim($_POST['message']);
+    if(isset($_POST['g-recaptcha-response']))
+    {
+        $captcha = $_POST['g-recaptcha-response'];
+    }
+
+    if(empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL) OR empty($message) OR empty($captcha))
+    {
+        http_response_code(400);
+		echo "Votre message n'a pu être envoyé !";
+        exit;
+    }
+
+    $recipient = "rossi56@hotmail.fr";
+    $subject = "Nouveau message de $name";
 
 
+    $email_content = "Nom: $name\n";
+    $email_content = "Email: $email\n";
+    $email_content = "Message: $$message\n";
+    $email_header = "De: $name <$email>";
 
-$f_name = cleanupentries($_POST["name"]);
-$f_email = cleanupentries($_POST["email"]);
-$f_message = cleanupentries($_POST["message"]);
-$from_ip = $_SERVER['REMOTE_ADDR'];
-$from_browser = $_SERVER['HTTP_USER_AGENT'];
-
-function cleanupentries($entry) {
-	$entry = trim($entry);
-	$entry = stripslashes($entry);
-	$entry = htmlspecialchars($entry);
-
-	return $entry;
+    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Lc5SXEUAAAAAOQqnmjmkYw41NJZST1lKgGYEHaj&response=".$captcha."&remoteip=".$_SERVER["REMOTE_ADDR"]);
+    $json = json_decode($response, true);
+    if($json['success'] == true)
+    {
+        if(mail($recipient, $subject, $email_content, $email_header))
+        {
+            http_response_code(200);
+           header('Location: index.php#reload');
+        }
+        else
+        {
+            http_response_code(500);
+            echo "Votre message, n'a pu être envoyé !";
+        }
+    }
+    else
+    {
+        http_response_code(400);
+        echo "erreur !";
+    }
 }
-
-$message = "Ce mail a été transmis le " . date('d-m-Y') . 
-"\n\nNom de l'expéditeur: " . $f_name . 
-"\n\nE-Mail de l'expéditeur: " . $f_email . 
-"\n\nMessage: \n" . $f_message . 
-"\n\n\nDétails technique du mail reçu:\n" . $from_ip . "\n" . $from_browser;
-
-$send_subject .= " - {$f_name}";
-
-$headers = "From: " . $f_email . "\r\n" .
-    "Reply-To: " . $f_email . "\r\n" .
-    "X-Mailer: PHP/" . phpversion();
-
-if (!$f_email) {
-	echo "Aucun E-mail";
-	exit;
-}else if (!$f_name){
-	echo "Aucun Nom";
-	exit;
-}else{
-	if (filter_var($f_email, FILTER_VALIDATE_EMAIL)) {
-		mail($send_to, $send_subject, $message, $headers);
-		echo "true";
-	}else{
-		echo "E-mail invalide !";
-		exit;
-	}
-}
-
-?>

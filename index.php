@@ -1,7 +1,3 @@
-<?php
-require 'recaptcha.php';
-$captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAAAAADG6WOQE6tPVUr819B_dpB4DrWvh')
-?>
 <!DOCTYPE HTML>
 <html class="no-js" lang="fr-FR">
 
@@ -73,7 +69,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!--==================================================  Captcha  ================================================== -->
-    <?= $captcha->script(); ?>
+
 
 </head>
 
@@ -446,15 +442,42 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
 
                     <img class="logo-contact" src="images/logo3.png" alt="logo">
 
-                    <p>Jardin indoor c’est avant tout un Grow-Shop / Head-Shop 100% Indépendant depuis 2011 situé à Vannes.</p>
+                    <p>Jardin indoor c’est avant tout un Grow-Shop / Head-Shop 100% Indépendant depuis 2011 situé à
+                        Vannes.</p>
                 </div>
 
 
-                <div class="widget footer_widget contact">
+                <div class="widget footer_widget contact" id="reload">
                     <h4 class="widgettitle">
                         <i class="fa fa-envelope"></i> Contactez-nous</h4>
+                    <form id="contactform" method="POST" action="mail-it.php">
 
-                    <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post" class="quick-quote clearfix">
+                        <label for="name">
+                            <span class="error" id="err-name">Ce champ est requis !</span>
+                        </label>
+                        <input type="text" placeholder="Votre nom: *" class="form-control" id="name" name="username">
+
+                        <label for="email">
+                            <span class="error" id="err-email">Ce champ est requis !</span>
+                            <span class="error" id="err-emailvld">L'e-mail n'est pas au bon format !</span>
+                        </label>
+                        <input type="mail" placeholder="Votre e-mail: *" class="form-control" id="email" name="email">
+
+                        <label for="message">
+                            <span class="error" id="err-msg">Ce champ est requis !</span>
+                        </label>
+                        <textarea class='form-control' placeholder="Votre message: *" name="message" id="message" cols="30"
+                            rows="5"></textarea>
+
+                        <button type="submit" name="submit" class="btn btn-primary btn-block">Envoyer</button>
+                        <br><br>
+                        <div class="g-recaptcha" data-sitekey='6Lc5SXEUAAAAAC_U_Ba6ULjw9bD611vOKOEXQo1p'></div>
+
+                        <div id="formresult">Votre message a bien été envoyé !</div>
+
+
+                    </form>
+                    <!-- <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post" class="quick-quote clearfix">
 
                         <label for="name">
                             <span class="error" id="err-name">Ce champ est requis !</span>
@@ -483,30 +506,9 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                         <div class="error text-align-center" id="err-form">Veuillez remplir le formulaire !</div>
                         <div class="error text-align-center" id="err-timedout">La connexion au serveur a expirée</div>
                         <div class="error" id="err-state"></div>
-                        <?= $captcha->html(); ?>
-                    </form>
+                       
+                    </form> -->
 
-                    <div class="clear"></div>
-                    <?php
-if(!empty($_POST))
-{
-    if($captcha->isValid($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']) === false)
-    {
-        ?>
-                    <div class="error">
-                        Le captcha ne semble pas valide
-                    </div>
-                    <?php
-    }
-    else
-    {
-        ?>
-                    <div id="ajaxsuccess">Votre message a bien été envoyé !</div>
-                    <?php
-    }   
-}
-
-?>
                     <div class="clear"></div>
 
                 </div>
@@ -563,7 +565,7 @@ if(!empty($_POST))
                                 <i class="fa fa-facebook-f"></i>
                             </a>
                         </li>
-                        
+
                     </ul>
                 </div>
 
@@ -607,7 +609,7 @@ if(!empty($_POST))
     <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
     <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 </html>

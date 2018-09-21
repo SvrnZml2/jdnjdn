@@ -396,3 +396,12 @@ body{
 	text-align: center;
  }
 
+/*=================================Captcha==============================*/
+#formresult{
+	display: none;
+}
+
+#formresult.result{
+	display: block;
+}
+
