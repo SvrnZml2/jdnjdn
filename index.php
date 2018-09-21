@@ -48,7 +48,6 @@
     <link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
-    <!-- Color Style -->
     <link href="css/color.css" rel="stylesheet" type="text/css">
     <!--************************ICONS*************************************-->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
