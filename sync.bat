@@ -1,0 +1,1 @@
+browser-sync start --proxy "localhost/rkhnglsk-master/jdnjdn" --files "*.php,css/*.css, *.js"

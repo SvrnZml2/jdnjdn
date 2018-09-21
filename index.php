@@ -7,7 +7,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
 
 <head>
     <!--***************************METAS**************************************-->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <meta name="google-site-verification" content="Xru99fz932aOq1RiiBecOcx0PgVDhfwOKL1FRh6qA-0" />
     <title>Jardin Indoor jardinerie indépendante spécialisé dans la culture indoor et la culture outdoor –Grow shop
         street shop Bretagne Morbihan vannes 56, graine potagère ancienne biobizz plagron shisha clipper feuille slim
@@ -48,8 +48,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="vendor/magnific/magnific-popup.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"> -->
     <link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
@@ -73,9 +72,6 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!--==================================================  SCRIPTS  ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <!-- Modernizr -->
     <!--==================================================  Captcha  ================================================== -->
     <?= $captcha->script(); ?>
 
@@ -429,7 +425,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
                 <div class="parallax parallax1 parallax-light padding-tb75" style="background-image:url(images/3.png);">
                     <div class="text-align-center">
                         <h2>Des conseils adaptés à vos cultures Indoor ou Outdoor <br> Des devis sur mesure et
-                            personnalisés .
+                            personnalisés.
 
                         </h2>
                         <a href="#contact" class="btn btn-default btn-ghost btn-light">Contactez-nous</a>
@@ -450,7 +446,7 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
 
                     <img class="logo-contact" src="images/logo3.png" alt="logo">
 
-                    <p>Jardin indoor c’est avant tout un Grow-Shop / Head-Shop 100% Indépendant depuis 2011 qui est situé à Vannes.</p>
+                    <p>Jardin indoor c’est avant tout un Grow-Shop / Head-Shop 100% Indépendant depuis 2011 situé à Vannes.</p>
                 </div>
 
 
@@ -610,7 +606,6 @@ if(!empty($_POST))
     <!-- Scripts divers -->
     <script src="js/script.js"></script>
     <script src="js/contact.js"></script>
-    <script src="js/jquery.fancybox.pack-dist.js"></script>
     <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
 
 </body>
