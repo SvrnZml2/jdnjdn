@@ -47,12 +47,12 @@ $captcha = new Recaptcha('6LdXGHEUAAAAANkZi3kn7hDJC8nPeft5nvRGQymQ', '6LdXGHEUAA
     <!--==================================================  CSS  ================================================== -->
     <link rel="stylesheet" href="bower_components/lightbox2/dist/css/lightbox.min.css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap-themeMin.css" rel="stylesheet" type="text/css">
-    <link href="css/styleMin.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css"> -->
     <link href="vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
     <link href="vendor/owl-carousel/css/owl.theme.css" rel="stylesheet" type="text/css">
-    <link href="css/customMin.css" rel="stylesheet" type="text/css">
-    <link href="css/colorMin.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/color.css" rel="stylesheet" type="text/css">
     <!--************************ICONS*************************************-->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
