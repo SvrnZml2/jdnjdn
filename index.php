@@ -9,8 +9,8 @@
         street shop Bretagne Morbihan vannes 56, graine potagère ancienne biobizz plagron shisha clipper feuille slim
         ocb pas cher</title>
     <meta name="description" lang="fr" content="Jardin Indoor est un Grow Shop street shop jardinerie indépendante situé à vannes dans le Morbihan 56 Bretagne. Vous pouvez y retrouver des feuilles slim clipper chicha à pas cher etc … mais également tout pour la culture indoor et outdoor matériels de culture hors sol terreaux biobizz plagron house et garden canna ainsi que de nombreuses chambres de culture éclairage horticole hps mh cfl à pas cher graines potagère tomates radis mais melon basilic piment etc. A pas cher CBD">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="keywords" content="jardinerie, grow shop, head shop, vannes, morbihan, 56, Bretagne, culture indoor, outdoor">
+    <meta name="author" content="jardin-indoor">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="robots" content="index, follow">
     <meta name="robots" content="index, follow">
@@ -586,11 +586,11 @@
     </main>
     <script src="js/jquery-2.2.3.min.js"></script>
     <!-- Jquery Library Call -->
-    <script src="vendor/magnific/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/magnific/jquery.magnific-popup.min.js" async></script>
     <!-- PrettyPhoto Plugin -->
     <script src="js/ui-plugins.js"></script>
     <!-- UI Plugins -->
-    <script src="js/helper-plugins.js"></script>
+    <script src="js/helper-plugins.js" async></script>
     <!-- Helper Plugins -->
     <script src="vendor/owl-carousel/js/owl.carousel.min.js"></script>
     <!-- Owl Carousel -->
@@ -602,11 +602,11 @@
     <!-- Map Google -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp9-xyLswGg78nw7blTPXbD11Dnqe46fQ&callback=initMap"
         async defer></script>
-    <script src="js/map.js"></script>
+    <script src="js/map.js" async></script>
     <!-- Scripts divers -->
-    <script src="js/script.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="bower_components/lightbox2/dist/js/lightbox.min.js"></script>
+    <script src="js/script.js" async></script>
+    <script src="js/contact.js" async></script>
+    <script src="bower_components/lightbox2/dist/js/lightbox.min.js" async defer></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
