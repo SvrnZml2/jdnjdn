@@ -441,8 +441,7 @@
 
                     <img class="logo-contact" src="images/logo3.png" alt="logo">
 
-                    <p>Jardin indoor c’est avant tout un Grow-Shop / Head-Shop 100% Indépendant depuis 2011 situé à
-                        Vannes.</p>
+                    <p>Jardin indoor c’est avant tout un Grow-Shop / Head-Shop 100% Indépendant depuis 2011 situé à Vannes.</p>
                 </div>
 
 

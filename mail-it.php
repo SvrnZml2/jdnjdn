@@ -23,10 +23,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
 
     $email_content = "Nom: $name\n";
     $email_content = "Email: $email\n";
-    $email_content = "Message: $$message\n";
+    $email_content = "Message: $message\n";
     $email_header = "De: $name <$email>";
 
-    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6Lc5SXEUAAAAAOQqnmjmkYw41NJZST1lKgGYEHaj&response=".$captcha."&remoteip=".$_SERVER["REMOTE_ADDR"]);
+    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LdTzHEUAAAAAFL3I70-a7kQoV-iZ5QTDHbM_39v&response=".$captcha."&remoteip=".$_SERVER["REMOTE_ADDR"]);
     $json = json_decode($response, true);
     if($json['success'] == true)
     {
@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         else
         {
             http_response_code(500);
-            echo "Votre message, n'a pu être envoyé !";
+            echo "Votre message n'a pu être envoyé !";
         }
     }
     else
